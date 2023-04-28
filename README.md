@@ -1,5 +1,7 @@
 # VS Mods for Noobs
 
+! WARNING ! This is a work in progress! Please use caution when running scripts in ./scripts directory and report issues you find with mods
+
 The purpose of this repo is to teach modding for Vintage Story through ordered examples with increasing complexity
 
 ## Recommended Pre-requisites
