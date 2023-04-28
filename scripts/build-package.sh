@@ -1,9 +1,6 @@
 #!/bin/bash -e
 set +x
 
-ONE_package_PER_VERSION=true
-RM_OPTIONS="" # set this to "-i" to always prompt before trying to remove old packages 
-
 function usage() {
     echo "ERROR: build: Usage: $(basename ${0}) <mod_dir>" >&2
     exit 1
@@ -15,6 +12,9 @@ function main () {
     mod_dir="$(readlink -f $1)"
 
     cd "$(dirname ${0})"
+    [[ -f .env ]] || cp .env.example .env
+    source .env
+
     echo "INFO: build: script dir: $PWD" >&2
     echo "INFO: build: mod_dir: $mod_dir" >&2
 
@@ -40,9 +40,12 @@ function main () {
     local package_prefix="${modid}_v${version}"
 
     local old_packages=$(ls "$packages_dir"/${package_prefix}*)
-    if [[ "$old_packages" != "" && "$ONE_package_PER_VERSION" == true ]]; then
+    if [[ "$old_packages" != "" && "$BUILD_ONE_PACKAGE_PER_VERSION" == true ]]; then
+        local rm_options=""
+        [[ "$BUILD_PROMPT_ON_REMOVE" == 'false' ]] || rm_options="-i"
+        
         echo "WARN: build: Removing old packages for version: $old_packages" >&2
-        rm $RM_OPTIONS $old_packages
+        rm $rm_options $old_packages
     fi
 
     local package_path="$packages_dir/${package_prefix}-${timestamp}.zip"

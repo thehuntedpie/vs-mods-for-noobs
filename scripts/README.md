@@ -8,6 +8,11 @@ These scripts were developed in an environment using
 3. chocolatey package manager (https://chocolatey.org/install)
 4. jq
 5. 7zip
+
+configuration for scripts is stored in `scripts/.env`
+
+If you have no config file one will be created for you based on .env.example
+`cp .env.example .env`
  
 ## Build Package
 

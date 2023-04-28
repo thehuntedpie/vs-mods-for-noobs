@@ -12,6 +12,9 @@ function main () {
     mod_dir="$(readlink -f $1)"
 
     cd "$(dirname ${0})"
+    [[ -f .env ]] || cp .env.example .env
+    source .env
+    
     echo "INFO: build-install: script dir: $PWD" >&2
     echo "INFO: build-install: mod_dir: $mod_dir" >&2
 
