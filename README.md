@@ -2,9 +2,9 @@
 
 The purpose of this repo is to teach modding for Vintage Story through ordered examples with increasing complexity
 
-## Recommended Prerequisites
+## Recommended Pre-requisites
 
-- knowledge of JSON
+- Knowledge of JSON
 - IDE installed such as Visual Studio Code
 - Graphics manipulation program such as GIMP or Photoshop: 
 - VS Model creator: https://wiki.vintagestory.at/index.php/Modding:VS_Model_Creator
