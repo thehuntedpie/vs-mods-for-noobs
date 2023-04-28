@@ -14,7 +14,7 @@ Mod Type: Content
  
 ## Tutorial
 
-This tutorial is 00 in the series of VS Mods for Noobs, a guide to learning how to mod for VS from scratch
+This tutorial is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
 
 This example demonstrates:
 
