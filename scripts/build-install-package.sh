@@ -2,7 +2,7 @@
 set +x
 
 function usage() {
-    echo "ERROR: make-install: Usage: $(basename ${0}) <mod_dir>" >&2
+    echo "ERROR: build-install: Usage: $(basename ${0}) <mod_dir>" >&2
     exit 1
 }
 
@@ -12,10 +12,10 @@ function main () {
     mod_dir="$(readlink -f $1)"
 
     cd "$(dirname ${0})"
-    echo "INFO: make-install: script dir: $PWD" >&2
-    echo "INFO: make-install: mod_dir: $mod_dir" >&2
+    echo "INFO: build-install: script dir: $PWD" >&2
+    echo "INFO: build-install: mod_dir: $mod_dir" >&2
 
-    local package_path=$(./make-package.sh "$mod_dir") 
+    local package_path=$(./build-package.sh "$mod_dir") 
     ./install-package.sh "$package_path"
 }
 

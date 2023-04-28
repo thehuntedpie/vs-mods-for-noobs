@@ -14,7 +14,7 @@ These scripts were developed in an environment using
 Build a package by packing mod contents into a zip file (depends on 7zip)
 (Options defined as variables in the script)
 
-`make-package.sh <mod_dir>`
+`build-package.sh <mod_dir>`
 
 ## Install Package
 
