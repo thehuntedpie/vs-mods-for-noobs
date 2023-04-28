@@ -1,6 +1,6 @@
 # VS Mods for Noobs
 
-The purpose of this repo is to teach modding for Vintage Story through ordered examples which increase in complexity
+The purpose of this repo is to teach modding for Vintage Story through ordered examples with increasing complexity
 
 ## Recommended Prerequisites
 
