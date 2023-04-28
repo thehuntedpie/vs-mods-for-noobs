@@ -1,6 +1,5 @@
-# Artifacts folder
-artifacts
-additional-files
+# Packages folder
+packages
 
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,vim
