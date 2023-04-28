@@ -1,0 +1,17 @@
+{
+    code: "emoji-card",
+    creativeinventory: { "general": ["*"] },   
+    variantgroups: [
+      { code: "emotion", states: ["happy", "sad", "serious" ] }
+    ],
+    maxstacksize: 10,
+    durabilitybytype: {
+      "*-happy": 4000,
+      "*-sad": 3000,
+      "*-serious": 2000
+    },
+    texture: {
+      base: "item/emoji-card-base",
+      overlays: [ "item/emoji-card-overlay-{emotion}" ]
+    } 
+}

@@ -1,0 +1,13 @@
+{
+    "type": "content",
+    "modid": "emoji-cards",
+    "name": "Emoji Cards",
+    "description" : "Adds Emoji Cards to aid communication between players :D",
+    "authors": ["TheHuntedPie"],
+    "version": "0.1.1",
+    "dependencies": { 
+      "game": "1.18+",
+      "survival": "1.18+"
+    },
+    "website": "http://vs-emoji-cards.com"
+  }

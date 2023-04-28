@@ -1,0 +1,13 @@
+{
+  "type": "content",
+  "modid": "resource-wands",
+  "name": "Resource Wands",
+  "description" : "Adds Wands for Resource Collection",
+  "authors": ["TheHuntedPie"],
+  "version": "0.1.4",
+  "dependencies": { 
+    "game": "1.18+",
+    "survival": "1.18+"
+  },
+  "website": "http://vs-resource-wands.com"
+}

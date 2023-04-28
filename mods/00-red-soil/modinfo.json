@@ -1,0 +1,13 @@
+{
+    "type": "theme",
+    "modid": "red-soil",
+    "name": "Red Soil",
+    "description" : "Give a red tint to soil",
+    "authors": ["TheHuntedPie"],
+    "version": "0.1.4",
+    "dependencies": { 
+      "game": "1.18+",
+      "survival": "1.18+"
+    },
+    "website": "http://vs-red-soil.com"
+  }

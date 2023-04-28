@@ -1,0 +1,17 @@
+{
+	ingredient: { type: "item", code: "flint" },
+	pattern: [[
+		"__________",
+		"_#_#_#_#_#",
+		"_#_#_#_#_#",
+		"__________",
+		"_#_#_#_#_#",
+		"_#_#_#_#_#",
+		"__________",
+		"_#_#_#_#_#",
+		"_#_#_#_#_#",
+		"__________"
+	]],
+	name: "Flint arrowhead (15)",
+	output: { type: "item", code: "arrowhead-flint", stacksize: 15  }
+}

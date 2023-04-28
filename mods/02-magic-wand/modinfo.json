@@ -1,0 +1,13 @@
+{
+    "type": "content",
+    "modid": "magic-wand",
+    "name": "Magic Wand",
+    "description" : "Introduces a Magic Wand powered by imagination!",
+    "authors": ["TheHuntedPie"],
+    "version": "0.1.2",
+    "dependencies": { 
+      "game": "1.18+",
+      "survival": "1.18+"
+    },
+    "website": "http://vs-magic-wand.com"
+  }

@@ -1,0 +1,13 @@
+{
+    "type": "content",
+    "modid": "more-flint-arrowheads",
+    "name": "More Flint Arrowheads",
+    "description" : "Increase the number of Flint Arrow Heads received from knapping",
+    "authors": ["TheHuntedPie"],
+    "version": "0.1.1",
+    "dependencies": { 
+      "game": "1.18+",
+      "survival": "1.18+"
+    },
+    "website": "http://vs-more-flint-arrowheads.com"
+  }
