@@ -1,7 +1,7 @@
 # Mod Development Scripts
 
 Folder of scripts to aid in mod development
-These scripts were developed in an environment using
+These scripts were developed in an environment using:
 
 1. Windows
 2. GitBash

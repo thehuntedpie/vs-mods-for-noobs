@@ -4,6 +4,11 @@
 
 The purpose of this repo is to teach modding for Vintage Story through ordered examples with increasing complexity
 
+## Recommended reading 
+
+https://wiki.vintagestory.at/index.php/Modding:Getting_Started
+https://wiki.vintagestory.at/index.php/Modding:Getting_Started#Moving_Forward
+
 ## Recommended Pre-requisites
 
 - Knowledge of JSON
