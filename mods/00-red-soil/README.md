@@ -31,4 +31,4 @@ Note that although the original files are located in the game's "assets\survival
 ## Credits & References
 
 - Modifies base game assets
-- VintageStory/survival/textures/block/soil/fert*.png
+- VintageStory/assets/survival/textures/block/soil/fert*.png
