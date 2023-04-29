@@ -1,6 +1,6 @@
 {
     code: "emoji-card",
-    creativeinventory: { "general": ["*"] },   
+    creativeinventory: { "general": ["*"], "items": ["*"] },   
     variantgroups: [
       { code: "emotion", states: ["happy", "sad", "serious" ] }
     ],
