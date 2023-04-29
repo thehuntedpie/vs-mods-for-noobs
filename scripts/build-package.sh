@@ -51,7 +51,7 @@ function main () {
         rm $rm_options $old_packages
     fi
 
-    local package_path="$packages_dir/${package_prefix}-${timestamp}.zip"
+    local package_path="$packages_dir/${package_prefix}+${timestamp}.zip"
 
     7z a "$package_path" $mod_dir/* >&2
     log INFO "finished building: $(readlink -f $package_path)"
