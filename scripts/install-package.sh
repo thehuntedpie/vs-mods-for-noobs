@@ -25,7 +25,7 @@ function main () {
 
     local package_dir="$(dirname $package_path)"
     local package_name="$(basename $package_path)"
-    local package_prefix="$(echo $package_name | sed -E 's/_[^_]+$//g')"_
+    local package_prefix="$(echo $package_name | sed -E 's/_.+$//g')"_
 
     local old_mod_versions=$(ls "$vs_mods_dir"/${package_prefix}* 2>/dev/null)
     if [[ "$old_mod_versions" != "" ]]; then
