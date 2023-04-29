@@ -1,4 +1,4 @@
-# <img src="modicon.png" width="32" height="32" Resource Wands
+# <img src="modicon.png" width="32" height="32"> Resource Wands
 
 Adds Wands for Resource Collection
  

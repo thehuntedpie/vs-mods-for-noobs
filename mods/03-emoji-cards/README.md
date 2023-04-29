@@ -1,4 +1,4 @@
-# <img src="modicon.png" width="32" height="32" Emoji Cards
+# <img src="modicon.png" width="32" height="32"> Emoji Cards
 
 Adds Emoji Cards to aid communication between players :D
  
