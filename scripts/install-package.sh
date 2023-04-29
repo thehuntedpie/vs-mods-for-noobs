@@ -37,7 +37,7 @@ function main () {
     fi
 
     cp $package_path $vs_mods_dir
-    log INFO "Installed \'$package_path\' to VintageStory Mods directory"
+    log INFO "Installed '"$package_path"' to VintageStory Mods directory"
 }
 
 main "${@}"
