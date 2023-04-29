@@ -1,5 +1,9 @@
 {
 	"item-wand-shovel": "Shovel Wand",
 	"item-wand-pickaxe": "Pickaxe Wand",
-	"item-wand-axe": "Axe Wand"
+	"item-wand-axe": "Axe Wand",
+
+	"itemdesc-wand-shovel": "Wand imbued with the powers of a shovel",
+	"itemdesc-wand-pickaxe": "Wand imbued with the powers of a pickaxe",
+	"itemdesc-wand-axe": "Wand imbued with the powers of an axe"
 }
