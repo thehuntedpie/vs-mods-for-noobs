@@ -1,4 +1,4 @@
-# Magic Wand
+# <img src="modicon.png" width="32" height="32" Magic Wand
 
 Introduces a Magic Wand powered by imagination! 
 
