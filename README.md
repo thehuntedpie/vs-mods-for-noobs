@@ -27,3 +27,10 @@ The purpose of this repo is to teach modding for Vintage Story through ordered e
 - additional-files: various other files for reference or exploration
 - images: images for README
 
+## Development Environment
+
+- See ./scripts directory
+- General Development Flow
+  1. Make a change to code
+  2. Run build-install script
+  3. Press Ctrl+F1 to reload the world in-place (works for most mods)

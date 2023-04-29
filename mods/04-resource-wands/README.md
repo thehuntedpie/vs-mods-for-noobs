@@ -28,6 +28,7 @@ This example demonstrates:
 6. Adding resource collection tool properties to items
 6. Adding first person and third person orientation roperties to items
 
+
 ### Tips & Tricks
 
 - Resources are namespaced according to the name of the directory in assets
