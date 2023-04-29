@@ -1,7 +1,6 @@
 {
     code: "wand",
-    creativeinventory: { "general": ["*"] },   
-    texture: {
-      base: "item/wand"
-    }
-}
+    texture: { base: "item/wand" }
+    creativeinventory: { "general": ["*"], "items": ["*"] },
+    maxstacksize: 1
+  }
