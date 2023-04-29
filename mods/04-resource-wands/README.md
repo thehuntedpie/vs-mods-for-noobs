@@ -58,7 +58,6 @@ For example
                 }
 ```
 
-
 ./itemtypes/wand.json
 
 ```json 
