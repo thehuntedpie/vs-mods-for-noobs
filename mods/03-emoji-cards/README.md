@@ -14,7 +14,7 @@ Mod Type: Content
  
 ## Tutorial
 
-This tutorial is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
+This mod is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
 
 This example demonstrates:
 
@@ -28,4 +28,5 @@ Note: Resources are namespaced according to the name of the directory in assets
 
 ## Credits & References
 
-https://wiki.vintagestory.at/index.php/Modding:Advanced_JSON_Item 
+- https://wiki.vintagestory.at/index.php/Modding:Advanced_JSON_Item 
+- Vintagestory/assets/survival/itemtypes/tool/pickaxe.json

@@ -1,6 +1,6 @@
 # More Flint Arrowheads
 
-Change Knapping recipes to better reflect actual item and object shapes
+Change Knapping recipe for flint arrowheads to increase the amount gained from knapping.
 
 Note: This mod overwrites vanilla game item knapping recipes!
 
@@ -14,7 +14,7 @@ Mod Type: Content
 
 ## Tutorial
 
-This tutorial is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
+This mod is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
 
 This example demonstrates:
 
@@ -25,5 +25,6 @@ Note that although the original files are located in the game's "assets\survival
 
 ## Credits
 
-Modifies base game knapping recipe for arrowheads
+- Modifies base game assets
+- Vintagestory/assets/survival/recipes/knapping/flint-arrowhead.json
 

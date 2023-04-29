@@ -17,7 +17,7 @@ https://wiki.vintagestory.at/index.php/Modding:Theme_Pack
 
 ## Tutorial
 
-This tutorial is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
+This mod is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
 
 This example demonstrates:
 
@@ -28,4 +28,5 @@ Note that although the original files are located in the game's "assets\survival
 
 ## Credits
 
-TODO: Based on soil mod
+- Modifies base game assets
+- VintageStory/survival/textures/block/soil/fert*.png

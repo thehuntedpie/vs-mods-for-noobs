@@ -11,12 +11,12 @@ Mod Type: Content
 **Asset Types**
 
 - Itemtype: used to define items in the game
-- Lang: used by the game to define the names of items defined in itemtypes
+- Lang: used by the game to define the names of items included in itemtypes
 - Textures: can be used by Itemtypes to add textures to items
  
 ## Tutorial
 
-This tutorial is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
+This mod is part of 'VS Mods for Noobs', a guide to learning how to mod for VS from scratch
 
 This example demonstrates:
 
@@ -26,7 +26,10 @@ This example demonstrates:
 4. Adding Names/Labels to items
 
 Note: Resources are namespaced according to the name of the directory in assets
+Note: Names of items in games have language identifiers that must be targeted in the lang folder e.g. item-myitemname
 
 ## Credits
 
-Based on (link to magic wand example)
+- Based on https://wiki.vintagestory.at/index.php/Modding:Basic_Item
+- Vintagestory/assets/survival/itemtypes/resource/feather.json
+- Vintagestory/assets/survival/textures/item/resource/feather.png

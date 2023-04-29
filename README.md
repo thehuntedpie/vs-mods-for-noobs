@@ -4,10 +4,10 @@
 
 The purpose of this repo is to teach modding for Vintage Story through ordered examples with increasing complexity
 
-## Recommended reading 
+## Recommended Reading 
 
-https://wiki.vintagestory.at/index.php/Modding:Getting_Started
-https://wiki.vintagestory.at/index.php/Modding:Getting_Started#Moving_Forward
+- https://wiki.vintagestory.at/index.php/Modding:Getting_Started
+- https://wiki.vintagestory.at/index.php/Modding:Basic_Modding_Examples
 
 ## Recommended Pre-requisites
 
@@ -15,6 +15,10 @@ https://wiki.vintagestory.at/index.php/Modding:Getting_Started#Moving_Forward
 - IDE installed such as Visual Studio Code
 - Graphics manipulation program such as GIMP or Photoshop: 
 - VS Model creator: https://wiki.vintagestory.at/index.php/Modding:VS_Model_Creator
+
+## General Guidelines
+
+- Don't be afraid to explore the game assets, this is a key guide to learning how to create content mods (copy properties from existing game objects)
 
 ## Contents
 
