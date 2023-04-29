@@ -1,8 +1,11 @@
 #!/bin/bash -e
 set +x
 
+source "$(dirname ${0})/utilities.sh"
+export LOG_ID=build
+
 function usage() {
-    echo "ERROR: build: Usage: $(basename ${0}) <mod_dir>" >&2
+    log ERROR "Usage: $(basename ${0}) <mod_dir>"
     exit 1
 }
 
@@ -15,21 +18,21 @@ function main () {
     [[ -f .env ]] || cp .env.example .env
     source .env
 
-    echo "INFO: build: script dir: $PWD" >&2
-    echo "INFO: build: mod_dir: $mod_dir" >&2
+    log INFO "script dir: $PWD"
+    log INFO "mod_dir: $mod_dir"
 
     local packages_dir="./packages" 
 
     jq_path=$(which jq)
     if [[ "$jq_path" == "" ]]; then 
-        echo ERROR: build: 'jq' command not found in PATH, try installing it with a package manager or setting its location in PATH
+        log ERROR "'jq' command not found in PATH, try installing it with a package manager or setting its location in PATH"
         exit 1
     fi
     
     local modinfo_path="$mod_dir/modinfo.json"
 
     if [[ ! -f "$modinfo_path" ]]; then 
-        echo "ERROR: build: Could not locate modinfo.json at $modinfo_path" >&2
+        log ERROR "Could not locate modinfo.json at $modinfo_path"
         exit 1
     fi
 
@@ -44,14 +47,14 @@ function main () {
         local rm_options=""
         [[ "$BUILD_PROMPT_ON_REMOVE" == 'false' ]] || rm_options="-i"
         
-        echo "WARN: build: Removing old packages for version: $old_packages" >&2
+        log WARN "Removing old packages for version: $old_packages"
         rm $rm_options $old_packages
     fi
 
     local package_path="$packages_dir/${package_prefix}-${timestamp}.zip"
 
     7z a "$package_path" $mod_dir/* >&2
-    echo "INFO: build: finished building: $(readlink -f $package_path)" >&2
+    log INFO "finished building: $(readlink -f $package_path)"
     echo "$(readlink -f $package_path)"
 }
 

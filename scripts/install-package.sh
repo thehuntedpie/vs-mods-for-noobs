@@ -1,8 +1,11 @@
 #!/bin/bash -e
 set +x
 
+source "$(dirname ${0})/utilities.sh"
+LOG_ID=install
+
 function usage() {
-    echo "ERROR: install: Usage: $(basename ${0}) <package_path>" >&2
+    log ERROR "Usage: $(basename ${0}) <package_path>"
     exit 1
 }
 
@@ -15,8 +18,8 @@ function main () {
     [[ -f .env ]] || cp .env.example .env
     source .env
 
-    echo "INFO: install: script dir: $PWD" >&2
-    echo "INFO: install: package_path: $package_path" >&2
+    log INFO "script dir: $PWD"
+    log INFO "package_path: $package_path"
 
     local vs_mods_dir="$(readlink -f $VS_MODS_DIR)"
 
@@ -29,12 +32,12 @@ function main () {
         local rm_options=""
         [[ "$INSTALL_PROMPT_ON_REMOVE" == 'false' ]] || rm_options="-i"
         
-        echo "WARN: install: Removing old mod versions: $old_mod_versions"
+        log WARN "Removing old mod versions: $old_mod_versions"
         rm $rm_options $old_mod_versions
     fi
 
     cp $package_path $vs_mods_dir
-    echo INFO: install: Installed "$package_path" to VintageStory Mods directory >&2
+    log INFO "Installed \'$package_path\' to VintageStory Mods directory"
 }
 
 main "${@}"

@@ -1,8 +1,11 @@
 #!/bin/bash -e
 set +x
 
+source "$(dirname ${0})/utilities.sh"
+export LOG_ID=build-install
+
 function usage() {
-    echo "ERROR: build-install: Usage: $(basename ${0}) <mod_dir>" >&2
+    log ERROR "Usage: $(basename ${0}) <mod_dir>"
     exit 1
 }
 
@@ -15,8 +18,8 @@ function main () {
     [[ -f .env ]] || cp .env.example .env
     source .env
     
-    echo "INFO: build-install: script dir: $PWD" >&2
-    echo "INFO: build-install: mod_dir: $mod_dir" >&2
+    log INFO "script dir: $PWD"
+    log INFO "mod_dir: $mod_dir"
 
     local package_path=$(./build-package.sh "$mod_dir") 
     ./install-package.sh "$package_path"
