@@ -25,8 +25,10 @@ This example demonstrates:
 3. Adding Textures to items
 4. Adding Names/Labels to items
 
-Note: Resources are namespaced according to the name of the directory in assets
-Note: Names of items in games have language identifiers that must be targeted in the lang folder e.g. item-myitemname
+### Tips & Tricks
+
+- Resources are namespaced according to the name of the directory in assets
+- Names of items in games have language identifiers that must be targeted in the lang folder e.g. item-myitemname
 
 ## Credits
 

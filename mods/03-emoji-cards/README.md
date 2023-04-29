@@ -24,7 +24,9 @@ This example demonstrates:
 4. Adding Names/Labels to items
 5. Creating multiple dynamic variations of an item 
 
-Note: Resources are namespaced according to the name of the directory in assets
+### Tips & Tricks
+
+- Resources are namespaced according to the name of the directory in assets
 
 ## Credits & References
 
