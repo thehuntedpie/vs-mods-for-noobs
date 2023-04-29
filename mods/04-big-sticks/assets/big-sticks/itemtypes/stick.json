@@ -17,9 +17,9 @@
       "*-biggest": 4000
     },
     attackRangebytype: {
-      "*-big": 3,
-      "*-bigger": 5,
-      "*-biggest": 7
+      "*-big": 2,
+      "*-bigger": 2.5,
+      "*-biggest": 3
     },
     texture: {
       base: "item/{size}-stick"
@@ -29,18 +29,15 @@
       "*-bigger": { scale: 2.6 },
       "*-biggest": { scale: 5.1 }
     },
-    tpHandTransformbytype: {
-      "*-big": { 
-        translation: { x: 0, y: 0, z: 0 },
-        scale: 0.6 
+    tpHandTransformbytype: {  
+      "*-big": {  
+        scale: 0.3 
       },
-      "*-bigger": { 
-        translation: { x: 0, y: 0, z: 0 },
-        scale: 0.8 
+      "*-bigger": {  
+        scale: 0.4 
       },
-      "*-biggest": { 
-        translation: { x: 0, y: 0, z: 0 },
-        scale: 1 
+      "*-biggest": {  
+        scale: 0.5 
       }
     }     
 }
