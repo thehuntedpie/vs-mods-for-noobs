@@ -28,8 +28,45 @@ This example demonstrates:
 6. Adding resource collection tool properties to items
 6. Adding first person and third person orientation roperties to items
 
+### Tips & Tricks
 
-Note: Resources are namespaced according to the name of the directory in assets
+- Resources are namespaced according to the name of the directory in assets
+- shapes are json files that can be dynamically modified by assigning a texture to a texture property of the object. 
+
+For example
+
+./shapes/item/tool/wand.json
+
+```json
+	"textures": {
+		"handle-material": "item/tool/wand-base",
+		"magic-material": "item/tool/wand-base"
+	},
+
+	"elements": [
+    ...
+		"children": [
+        ...
+            "children": [
+            ...        
+                "name": "HaloX",
+                ...
+                "faces": {
+                    "north": { "texture": "#magic-material", "uv": [ 0.0, 5.0, 1.0, 6.0 ] },
+                    ...
+                }
+```
+
+
+./itemtypes/wand.json
+
+```json 
+...
+	textures: {
+        "magic-material": { base: "item/tool/wand-overlay-{type}" }
+	},
+...
+```
 
 ## Credits & References
 
