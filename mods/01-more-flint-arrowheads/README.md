@@ -1,4 +1,4 @@
-# More Flint Arrowheads
+# ![modicon](modicon.png) More Flint Arrowheads
 
 Change Knapping recipe for flint arrowheads to increase the amount gained from knapping.
 
