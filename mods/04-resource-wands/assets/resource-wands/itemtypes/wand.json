@@ -1,6 +1,7 @@
 {
+	mainpurpose: "Magical Resource Collection",
 	code: "wand",
-	creativeinventory: { "general": ["*"] },
+	creativeinventory: { "general": ["*"], "items": ["*"] },
 	variantgroups: [
 		{ code: "type", states: ["shovel", "pickaxe", "axe" ] }
 	],
@@ -27,12 +28,13 @@
 		"*-pickaxe": 3000,
 		"*-axe": 2000
 	},
+	damagedby: ["blockbreaking"],
 	maxstacksize: 1,
 	shape: {
 		base: "item/tool/wand"
 	},	
 	textures: {
-        "material": { base: "item/tool/wand-overlay-{type}" }
+        "magic-material": { base: "item/tool/wand-overlay-{type}" }
 	},
 	guiTransform: {
 		translation: { x: 0, y: 0, z: 0 },
