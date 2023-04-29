@@ -19,6 +19,7 @@ The purpose of this repo is to teach modding for Vintage Story through ordered e
 ## General Guidelines
 
 - Don't be afraid to explore the game assets, this is a key guide to learning how to create content mods (copy properties from existing game objects)
+- In VS Code you can search through all of the JSON files by opening the assets folder (%APPDATA%\Vintagestory\assets on Windows) and pressing Crtl+Shift+F
 
 ## Contents
 
