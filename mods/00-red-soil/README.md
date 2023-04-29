@@ -1,4 +1,4 @@
-# Red Soil
+# ![modicon](modicon.png) Red Soil
 
 Replaces game textures for block soil with red tinted soil.
 
