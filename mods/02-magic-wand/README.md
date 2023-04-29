@@ -30,7 +30,7 @@ This example demonstrates:
 - Resources are namespaced according to the name of the directory in assets
 - Names of items in games have language identifiers that must be targeted in the lang folder e.g. item-myitemname
 
-## Credits
+## Credits & References
 
 - Based on https://wiki.vintagestory.at/index.php/Modding:Basic_Item
 - Vintagestory/assets/survival/itemtypes/resource/feather.json

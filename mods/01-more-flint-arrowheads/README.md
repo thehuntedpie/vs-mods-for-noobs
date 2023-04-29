@@ -25,7 +25,7 @@ This example demonstrates:
 
 Note that although the original files are located in the game's "assets\survival" directory, when overriding them in a mod we use the "assets\game" directory path
 
-## Credits
+## Credits & References
 
 - Modifies base game assets
 - Vintagestory/assets/survival/recipes/knapping/flint-arrowhead.json
