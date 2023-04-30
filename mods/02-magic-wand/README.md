@@ -11,7 +11,7 @@ Mod Type: Content
 **Asset Types**
 
 - Itemtype: used to define items in the game
-- Lang: used by the game to define the names of items included in itemtypes
+- Lang: used by the game to define names and descriptions
 - Textures: can be used by Itemtypes to add textures to items
  
 ## Tutorial
