@@ -34,10 +34,7 @@
     lightAbsorption: 1,
     sideSolidOpaqueAoByType: {
       "*-table-*" : { all: false, up: true },
-      "@.*-(chair)-.*-north.*": { all:false, down:true, north: true },
-      "@.*-(chair)-.*-west.*": { all:false, down:true, west: true },
-      "@.*-(chair)-.*-south.*": { all:false, down:true, south: true },
-      "@.*-(chair)-.*-east.*": { all:false, down:true, east: true },
+      "@.*-(chair)-.*-north.*": { all:false, down:true, "{side}": true },
       "*" : { all: false }
     },  
     drawtype: "json",
