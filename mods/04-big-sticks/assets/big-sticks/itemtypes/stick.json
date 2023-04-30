@@ -25,19 +25,19 @@
       base: "item/{size}-stick"
     },  
     fpHandTransformbytype: {
-      "*-big": { scale: 1.38 },
-      "*-bigger": { scale: 2.6 },
-      "*-biggest": { scale: 5.1 }
+      "*-big": { scale: 1.5 },
+      "*-bigger": { scale: 2.5 },
+      "*-biggest": { scale: 3.5 }
     },
     tpHandTransformbytype: {  
       "*-big": {  
-        scale: 0.3 
-      },
-      "*-bigger": {  
         scale: 0.4 
       },
+      "*-bigger": {  
+        scale: 0.43 
+      },
       "*-biggest": {  
-        scale: 0.5 
+        scale: 0.48 
       }
     }     
 }
