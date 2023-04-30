@@ -1,0 +1,43 @@
+{
+    code: "stick",
+    damagedby: ["attacking"],
+    creativeinventory: { "general": ["*"], "items": ["*"] },   
+    variantgroups: [
+      { code: "size", states: ["big", "bigger", "biggest" ] }
+    ],
+    maxstacksize: 1,
+    attackpowerbytype: {
+      "*-big": 1.75,
+      "*-bigger": 5,
+      "*-biggest": 10
+    },      
+    durabilitybytype: {
+      "*-big": 2000,
+      "*-bigger": 3000,
+      "*-biggest": 4000
+    },
+    attackRangebytype: {
+      "*-big": 2,
+      "*-bigger": 2.5,
+      "*-biggest": 3
+    },
+    texture: {
+      base: "item/{size}-stick"
+    },  
+    fpHandTransformbytype: {
+      "*-big": { scale: 1.5 },
+      "*-bigger": { scale: 2.5 },
+      "*-biggest": { scale: 3.5 }
+    },
+    tpHandTransformbytype: {  
+      "*-big": {  
+        scale: 0.4 
+      },
+      "*-bigger": {  
+        scale: 0.43 
+      },
+      "*-biggest": {  
+        scale: 0.48 
+      }
+    }     
+}
