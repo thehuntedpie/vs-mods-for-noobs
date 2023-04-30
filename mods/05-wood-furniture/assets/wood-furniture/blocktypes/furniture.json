@@ -1,27 +1,27 @@
+/* 
+  Purpose: Dynamically define wood furniture blocks
+  
+  A description of most if not all properties can be found here: 
+  https://wiki.vintagestory.at/index.php/Modding:Block_Json_Properties
+*/
   {
-    code: "furniture",
-    attributes: { 
-      handbook: {
-        groupBy: ["furniture-{type}*"]
-      },
-      partialAttachable: true
+    code: "furniture", // A unique identifier for the block
+    attributes: {
+      handbook: { groupBy: ["furniture-{type}-*"] }
     },   
-    attributesByType: {
+    attributesByType: { // set attributes (byType)
       "*-table-*": { "pieFormingSurface": true }
     },
     behaviors: [
-      { name: "HorizontalOrientable", properties: {  
+      { name: "HorizontalOrientable", properties: { 
           dropBlockFace: "east", 
-          drop: { 
-            type: "block", 
-            code: "furniture-{type}-{wood}-east"
-          }  
+          drop: { type: "block", code: "furniture-{type}-{wood}-east" }  
       }}
     ],    
     variantgroups: [
       { code: "type", states: ["table", "chair"] },
       { code: "wood", states: ["aged", "agedebony"], loadFromProperties: "game:block/wood" },
-      { loadFromProperties: "game:abstract/horizontalorientation" }
+      { code: "side", loadFromProperties: "game:abstract/horizontalorientation" }
     ],
     creativeinventory: { "general": ["*-east"], "construction": ["*-east"] },
     shapebytype: {
@@ -42,7 +42,7 @@
     },  
     drawtype: "json",
     texturesByType: {
-      "*-aged*": {
+      "*-aged*": {  
         all: { base: "game:block/wood/planks/aged/generic*", rotation: 90  }
       },
       "*-agedebony*": {
@@ -52,14 +52,14 @@
         all: { base: "game:block/wood/planks/{wood}*", rotation: 90  }
       }
     },
-    resistance: 3.5,
-    sounds: {
+    resistance: 3.5, // time to break (seconds) (with mining speed 1).	
+    sounds: { // sounds associated with the block
       "hit": "game:block/planks",
       "break": "game:block/planks",
       "place": "game:block/planks",
       "walk": "game:walk/wood"
     },
-    materialDensity: 400,
+    materialDensity: 400, //affects ability to float in water
     collisionSelectionboxByType: {
       "*-chair-*": { x1: 0.0625, y1: 0, z1: 0.0625, x2: 1, y2: 0.3125, z2: 1 },
       "*-table-*": { x1: 0, y1: 0, z1: 0, x2: 1, y2: 1, z2: 1 }
@@ -69,7 +69,6 @@
       burnDuration: 20
     },
     maxStackSize: 32,
-    materialDensity: 600,
     heldTpIdleAnimation: "holdbothhandslarge", 
     heldTpUseAnimation: "twohandplaceblock",
     tpHandTransform: {
