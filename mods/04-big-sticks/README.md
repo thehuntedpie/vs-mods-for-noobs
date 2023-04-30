@@ -1,4 +1,4 @@
-# Emoji Cards
+# <img src="modicon.png" width="32" height="32"> Big Sticks
 
 Add big sticks to defend yourself with!
  
