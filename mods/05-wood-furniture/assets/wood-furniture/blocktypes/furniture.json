@@ -1,0 +1,80 @@
+  {
+    code: "furniture",
+    attributes: { 
+      handbook: {
+        groupBy: ["furniture-{type}*"]
+      },
+      partialAttachable: true
+    },   
+    attributesByType: {
+      "*-table-*": { "pieFormingSurface": true }
+    },
+    behaviors: [
+      { name: "HorizontalOrientable", properties: {  
+          dropBlockFace: "east", 
+          drop: { 
+            type: "block", 
+            code: "furniture-{type}-{wood}-east"
+          }  
+      }}
+    ],    
+    variantgroups: [
+      { code: "type", states: ["table", "chair"] },
+      { code: "wood", states: ["aged", "agedebony"], loadFromProperties: "game:block/wood" },
+      { loadFromProperties: "game:abstract/horizontalorientation" }
+    ],
+    creativeinventory: { "general": ["*-east"], "construction": ["*-east"] },
+    shapebytype: {
+      "*-north": { base: "block/{type}", rotateY: 0 },
+      "*-west": { base: "block/{type}", rotateY: 90 },
+      "*-south": { base: "block/{type}", rotateY: 180 },
+      "*-east": { base: "block/{type}", rotateY: 270 }
+    },
+    blockmaterial: "Wood",
+    lightAbsorption: 1,
+    sideSolidOpaqueAoByType: {
+      "*-table-*" : { all: false, up: true },
+      "@.*-(chair)-.*-north.*": { all:false, down:true, north: true },
+      "@.*-(chair)-.*-west.*": { all:false, down:true, west: true },
+      "@.*-(chair)-.*-south.*": { all:false, down:true, south: true },
+      "@.*-(chair)-.*-east.*": { all:false, down:true, east: true },
+      "*" : { all: false }
+    },  
+    drawtype: "json",
+    texturesByType: {
+      "*-aged*": {
+        all: { base: "game:block/wood/planks/aged/generic*", rotation: 90  }
+      },
+      "*-agedebony*": {
+        all: { base: "game:block/wood/planks/aged/ebony*", rotation: 90  }
+      },
+      "*": {
+        all: { base: "game:block/wood/planks/{wood}*", rotation: 90  }
+      }
+    },
+    resistance: 3.5,
+    sounds: {
+      "hit": "game:block/planks",
+      "break": "game:block/planks",
+      "place": "game:block/planks",
+      "walk": "game:walk/wood"
+    },
+    materialDensity: 400,
+    collisionSelectionboxByType: {
+      "*-chair-*": { x1: 0.0625, y1: 0, z1: 0.0625, x2: 1, y2: 0.3125, z2: 1 },
+      "*-table-*": { x1: 0, y1: 0, z1: 0, x2: 1, y2: 1, z2: 1 }
+    },
+    combustibleProps: {
+      burnTemperature: 800,
+      burnDuration: 20
+    },
+    maxStackSize: 32,
+    materialDensity: 600,
+    heldTpIdleAnimation: "holdbothhandslarge", 
+    heldTpUseAnimation: "twohandplaceblock",
+    tpHandTransform: {
+      translation: { x: -1.23, y: -0.91, z: -0.8 },
+      rotation: { x: -2, y: 25, z: -78 },
+      scale: 0.4
+    }
+  }
