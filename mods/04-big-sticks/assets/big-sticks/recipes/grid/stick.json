@@ -1,0 +1,29 @@
+[
+	{
+		ingredientPattern: "S,S,S",
+		ingredients: {
+			"S": { type: "item", code: "game:stick" }
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "stick-big" }
+	},
+	{
+		ingredientPattern: "S,S,S",
+		ingredients: {
+			"S": { type: "item", code: "stick-big" }
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "stick-bigger" }
+	},
+	{
+		ingredientPattern: "S,S,S",
+		ingredients: {
+			"S": { type: "item", code: "stick-bigger" }
+		},
+		width: 1,
+		height: 3,
+		output: { type: "item", code: "stick-biggest" }
+	}		
+]
