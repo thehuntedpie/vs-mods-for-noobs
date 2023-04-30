@@ -18,22 +18,21 @@ This mod is part of 'VS Mods for Noobs', a guide to learning how to mod for VS f
 
 This example demonstrates:
 
-1. Adding an Item to the Game
-2. Adding a new item in a custom asset namespace
-3. Adding Textures to items
-4. Adding Names/Labels to items
+1. Adding an Block to the Game
+2. Adding a new block in a custom asset namespace
+3. Adding shapes to blocks
+4. Adding Names/Labels to blocks
 
 ### Tips & Tricks
 
 - Resources are namespaced according to the name of the directory in assets
-- Names of items in games have language identifiers that must be targeted in the lang folder e.g. item-myitemname
+- Names of blocks in games have language identifiers that must be targeted in the lang folder e.g. block-myitemname
 - blocktype loads wood types properties from ./assets/survival/worldproperties/block/wood.json
 - selection, collision:y2 = height/16
-
 
 ## Credits & References
 
 - Based on https://wiki.vintagestory.at/index.php/Modding:Basic_Item
-C:\Users\thehuntedpie\AppData\Roaming\Vintagestory\assets\survival\blocktypes\roofing/slantedroofing.json
-C:\Users\thehuntedpie\AppData\Roaming\Vintagestory\assets\survival\blocktypes\wood\woodtyped\plankstairs.json
-C:\Users\thehuntedpie\AppData\Roaming\Vintagestory\assets\survival\blocktypes\wood\table.json
+- ./Vintagestory/assets/survival/blocktypes/roofing/slantedroofing.json
+- ./Vintagestory/assets/survival/blocktypes/wood/woodtyped/plankstairs.json
+- ./Vintagestory/assets/survival/blocktypes/wood/table.json
