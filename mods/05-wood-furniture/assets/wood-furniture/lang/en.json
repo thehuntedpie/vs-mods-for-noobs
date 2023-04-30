@@ -12,7 +12,8 @@
     "block-furniture-chair-walnut-*": "Wood Chair (Walnut)",
     "block-furniture-chair-purpleheart-*": "Wood Chair (Purpleheart)",
     "block-furniture-chair-aged-*": "Wood Chair (Aged)",
-    "block-furniture-chair-agedebony-*": "Wood Chair (Aged Ebony)",
+    "block-furniture-chair-agedebony-*": "Wood Chair (Aged Ebony)",    
+    "block-furniture-chair-rottenebony-*": "Wood Chair (Rotten Ebony)",
 
     "block-furniture-table-birch-*": "Wood Table (Birch)",
     "block-furniture-table-oak-*": "Wood Table (Oak)",
@@ -27,5 +28,6 @@
     "block-furniture-table-walnut-*": "Wood Table (Walnut)",
     "block-furniture-table-purpleheart-*": "Wood Table (Purpleheart)",
     "block-furniture-table-aged-*": "Wood Table (Aged)",
-    "block-furniture-table-agedebony-*": "Wood Table (Aged Ebony)"
+    "block-furniture-table-agedebony-*": "Wood Table (Aged Ebony)",
+    "block-furniture-table-rottenebony-*": "Wood Table (Rotten Ebony)"
 }
