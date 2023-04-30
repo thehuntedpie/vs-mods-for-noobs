@@ -13,33 +13,37 @@
       "*-table-*": { "pieFormingSurface": true }
     },
     behaviors: [
-      { name: "HorizontalOrientable", properties: { 
+      { name: "HorizontalOrientable", properties: { // allow placement based on player direction
+          // drop *-east version (the one that looks good as an icon) when broken
           dropBlockFace: "east", 
           drop: { type: "block", code: "furniture-{type}-{wood}-east" }  
       }}
     ],    
+    // configure variant groups using pattern {type}-{wood}-{side}
     variantgroups: [
       { code: "type", states: ["table", "chair"] },
-      { code: "wood", states: ["aged", "agedebony"], loadFromProperties: "game:block/wood" },
+      { code: "wood", states: ["aged", "agedebony", "rottenebony"], loadFromProperties: "game:block/wood" },
       { code: "side", loadFromProperties: "game:abstract/horizontalorientation" }
     ],
+    // show *-east version (the one that looks good as an icon) in creative inventory
     creativeinventory: { "general": ["*-east"], "construction": ["*-east"] },
-    shapebytype: {
+    shapebytype: { // rotate shape based on player direction (depends on HorizontalOrientable)
       "*-north": { base: "block/{type}", rotateY: 0 },
       "*-west": { base: "block/{type}", rotateY: 90 },
       "*-south": { base: "block/{type}", rotateY: 180 },
       "*-east": { base: "block/{type}", rotateY: 270 }
     },
-    blockmaterial: "Wood",
-    lightAbsorption: 1,
-    sideSolidOpaqueAoByType: {
+    blockmaterial: "Wood", // used to determine mining speed with a specific tool
+    lightAbsorption: 16, // 0-32 how much to block light
+    sideSolidOpaqueAoByType: { // combines (sidesolid, sideopaque, sideao) (bytype)
       "*-table-*" : { all: false, up: true },
-      "@.*-(chair)-.*-north.*": { all:false, down:true, "{side}": true },
+      // @ indicates a regular expression is being used
+      "@.*-(chair)-.*-north.*": { all:false, down:true, "{side}": true }, 
       "*" : { all: false }
     },  
-    drawtype: "json",
+    drawtype: "json", // enable drawing of custom json model
     texturesByType: {
-      "*-aged*": {  
+      "*-aged*": {
         all: { base: "game:block/wood/planks/aged/generic*", rotation: 90  }
       },
       "*-agedebony*": {
@@ -56,18 +60,20 @@
       "place": "game:block/planks",
       "walk": "game:walk/wood"
     },
-    materialDensity: 400, //affects ability to float in water
+    materialDensity: 400, // affects ability to float in water
     collisionSelectionboxByType: {
       "*-chair-*": { x1: 0.0625, y1: 0, z1: 0.0625, x2: 1, y2: 0.3125, z2: 1 },
       "*-table-*": { x1: 0, y1: 0, z1: 0, x2: 1, y2: 1, z2: 1 }
     },
-    combustibleProps: {
+    combustibleProps: { // allow block to be used as fuel
       burnTemperature: 800,
       burnDuration: 20
     },
     maxStackSize: 32,
+    // furniture is large, make sure we visually use both hands
     heldTpIdleAnimation: "holdbothhandslarge", 
     heldTpUseAnimation: "twohandplaceblock",
+    // third person transform
     tpHandTransform: {
       translation: { x: -1.23, y: -0.91, z: -0.8 },
       rotation: { x: -2, y: 25, z: -78 },
