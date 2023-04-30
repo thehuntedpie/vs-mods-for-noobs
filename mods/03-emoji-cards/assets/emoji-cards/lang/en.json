@@ -1,5 +1,9 @@
 {
     "item-emoji-card-happy":   "Happy Face",
     "item-emoji-card-sad":     "Sad Face",
-    "item-emoji-card-serious": "Serious Face"
+    "item-emoji-card-serious": "Serious Face",
+
+    "itemdesc-emoji-card-happy":   "Show the world, sunshine's on your mind",
+    "itemdesc-emoji-card-sad":     "A cry for help, in these sad, sad times",
+    "itemdesc-emoji-card-serious": "This is serious business, stop messing around."
 }
