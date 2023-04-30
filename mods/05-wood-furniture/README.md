@@ -33,6 +33,9 @@ This example demonstrates:
 ## Credits & References
 
 - Based on https://wiki.vintagestory.at/index.php/Modding:Basic_Item
+- https://wiki.vintagestory.at/index.php/Modding:Block_Json_Properties
+- https://wiki.vintagestory.at/index.php/Modding:Json_Block_Behaviors
+- https://wiki.vintagestory.at/index.php/Modding:Block_Classes
 - ./Vintagestory/assets/survival/blocktypes/roofing/slantedroofing.json
 - ./Vintagestory/assets/survival/blocktypes/wood/woodtyped/plankstairs.json
 - ./Vintagestory/assets/survival/blocktypes/wood/table.json
