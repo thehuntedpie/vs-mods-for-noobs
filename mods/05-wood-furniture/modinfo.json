@@ -1,0 +1,13 @@
+{
+    "type": "content",
+    "modid": "wood-furniture",
+    "name": "Wood Furniture",
+    "description" : "Adds new types of wood furniture",
+    "authors": ["TheHuntedPie"],
+    "version": "0.1.1",
+    "dependencies": { 
+      "game": "1.18+",
+      "survival": "1.18+"
+    },
+    "website": "http://vs-wood-furniture.com"
+  }
